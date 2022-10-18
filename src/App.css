@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    margin: 0;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    overflow: overlay;
+    -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라(신) */
+    -ms-text-size-adjust: none; /* IE */
+    -moz-text-size-adjust: none; /* 파이어폭스 */
+    -o-text-size-adjust: none; /* 오페라(구)*/
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+
+@media (768px <= width < 1200px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 1rem;
+    }
+}
